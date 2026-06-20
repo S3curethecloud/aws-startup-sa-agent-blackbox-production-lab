@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AgentIdentityRecord",
+  "type": "object",
+  "required": ["tenant_id", "agent_id", "agent_name", "owner", "status", "created_at"],
+  "properties": {
+    "tenant_id": {"type": "string"},
+    "agent_id": {"type": "string"},
+    "agent_name": {"type": "string"},
+    "owner": {"type": "string"},
+    "allowed_tools": {"type": "array", "items": {"type": "string"}},
+    "risk_tier": {"type": "string", "enum": ["low", "medium", "high", "critical"]},
+    "public_key_ref": {"type": "string"},
+    "status": {"type": "string", "enum": ["pending", "active", "revoked"]},
+    "created_at": {"type": "string", "format": "date-time"}
+  }
+}

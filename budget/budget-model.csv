@@ -1,0 +1,10 @@
+Category,Service,MVP cost lever,Scale trigger,Owner
+Frontend,S3 + CloudFront,Static hosting and CDN cache,High traffic or WAF rule expansion,Platform
+Auth,Cognito,MAU-based pricing and MFA choices,Enterprise federation,Platform
+API,API Gateway + Lambda,Pay-per-request and memory tuning,Sustained traffic or long-running workloads,Backend
+Metadata,DynamoDB,On-demand mode and item size discipline,High read/write volume or analytics needs,Backend
+Evidence,S3,KMS/object lifecycle/retention policy,Large evidence packages and retention,Platform
+AI,Bedrock,Model routing/token caps/caching,High token volume or latency SLO,AI
+Workflow,Step Functions + SQS,Async processing and retry limits,Long workflows or high fan-out,Backend
+Security,WAF/GuardDuty/Security Hub,Managed rules and finding hygiene,Enterprise procurement,Security
+Observability,CloudWatch,Log retention and metric filters,High cardinality logs or tracing needs,Platform
